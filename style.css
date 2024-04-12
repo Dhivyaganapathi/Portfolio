@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: white;
+    color: black;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: greenyellow;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: transparent;
+    z-index: 100;
+    border-bottom: 2px solid rgb(255, 57, 47);
+    cursor:grab;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 880;
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    pointer-events: none;
+}
+.logo span{
+    color: red;
+}
+.navbar a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    margin-left: 35px;
+}
+.navbar a.active{
+    color: red;
+}
+.navbar a:hover{
+    color:red;
+    cursor:grab;
+}
+#home{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   padding: 75px 10% 0;
+   justify-content: space-between;
+}
+.home-content{
+    max-width: 400px;
+}
+.home-content h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.home-content h1 span{
+    color: red;
+}
+.home-content h3{
+    font-size: 45px;
+    font-weight: 600;
+}
+.home-content p{
+    font-size: 16px;
+    padding: 5px;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:160px;
+    height: 48px;
+    background: rgb(225, 49, 43);
+    border-radius: 40px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.btn:hover{
+    color: rgb(8, 8, 8);
+    background: linear-gradient(45deg,rgb(244, 50, 7),rgb(233, 233, 237),rgb(253, 59, 5));
+}
+.home-img{
+     width: 400px;
+     height: 400px;
+}
+.home-img .glow-circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(173, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img .glow-circle::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: rgb(49, 49, 49);
+    border-radius: 50%;
+}
+.glow-circle .image{
+    position: relative;
+    width: 380px;
+    height:380px ;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+.image img{
+    object-fit: cover;
+    width: 380px;
+    height:380px ;
+    border-radius: 50%;
+}
+.home-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px rgb(246, 246, 246) solid;
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(226, 214, 214);
+    text-decoration: none;
+    margin: 20px 0;
+    background:rgb(207, 75, 75) ;
+}
+.home-logo a:hover{
+    background: linear-gradient(45deg,rgb(244, 50, 7),rgb(233, 233, 237),rgb(253, 59, 5));
+    color: rgb(4, 4, 4); 
+    border: 1px rgb(7, 7, 7) solid;
+
+}
+#skills{
+    padding-top: 20px;
+}
+.heading{
+    text-align: center;
+    color: red;
+    padding: 1rem;
+    position: relative;
+    font-size: 40px;
+    margin-top: 55px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skill-box{
+    padding: 1rem;
+    color: black;
+    cursor: pointer;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.skill-icon{
+    width: 50px;
+}
+.skill-title h2{
+    color: orangered;
+    margin: 0.5rem;
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+.skill-box:hover h2{
+    border-bottom: 1px red solid;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 400px;
+}
+#contact input,textarea{
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: rgb(227, 222, 222);
+}
+#contact button{
+ margin: 10px 0px;
+}
+#contact h1{
+    color:red;
+    font-size: 40px;
+    text-align: center;
+}
+.container-box .row{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 10% 0;
+}
+.container-box .row .profile img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px red double;
+}
+#about .row .about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 400px;
+    margin-left: 30px;
+}
+#about .row .about h1{
+    font-size: 50px;
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#home{
+    border-bottom: 2px solid rgb(12, 12, 12);
+}
+#about{
+    border-bottom: 2px solid rgb(10, 9, 9);
+}
+#skills{
+    border-bottom: 2px solid rgb(13, 13, 13);
+}
+#contact{
+    border-bottom: 2px solid rgb(11, 11, 11);
+}
